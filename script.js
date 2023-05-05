@@ -27,7 +27,7 @@ const gameModule = (() => {
       boxes[i].style.pointerEvents = "auto";
     }
 
-    resultDisplay.innerText = "";
+    resultDisplay.innerText = "X goes first";
   }
   function _checkWin(playerXSelections, playerOSelections, winningSolutions) {
     let winningSolutionFound = false;

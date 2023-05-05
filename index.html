@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
 </head>
-<body>
-    <h1 class="text-3xl text-center font-bold">Tic Tac Toe</h1>
-    <div class="container border border-black grid grid-rows-3 grid-cols-3">
-        <div class="box border border-black h-full w-full flex justify-center items-center">1</div>
-        <div class="box border border-black h-full w-full flex justify-center items-center">2</div>
-        <div class="box border border-black h-full w-full flex justify-center items-center">3</div>
-        <div class="box border border-black h-full w-full flex justify-center items-center">4</div>
-        <div class="box border border-black h-full w-full flex justify-center items-center">5</div>
-        <div class="box border border-black h-full w-full flex justify-center items-center">6</div>
-        <div class="box border border-black h-full w-full flex justify-center items-center">7</div>
-        <div class="box border border-black h-full w-full flex justify-center items-center">8</div>
-        <div class="box border border-black h-full w-full flex justify-center items-center">9</div>
+<body class="bg-gray-300 font-mono">
+    <div class="min-h-screen flex flex-col justify-between items-center">
+    <h1 class="text-3xl text-center font-bold bg-gray-800 w-screen h-12 text-blue-300 flex items-center justify-center">Tic Tac Toe</h1>
+    <div class=" w-[80%] sm:w-[40%] md:w-[30%] lg:w-[35%] xl:w-[20%] 2xl:w-[30%] aspect-square border border-black grid grid-rows-3 grid-cols-3">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
-    <div><p id="result"></p></div>
-    <button id="replay" class="">replay</button>
+    <div><p id="result" class="text-3xl text-center font-bold text-gray-700">X goes first</p></div>
+    <button id="replay" class="btn-primary">replay</button>
+    <footer class="text-3xl text-center font-bold bg-gray-800 w-screen h-12 text-blue-300 flex items-center justify-center"><p>made by <a href="https://github.com/Schismond">schismond</p><img src="images/git.png" alt="github logo" class="w-8 aspect-square"></a></footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
