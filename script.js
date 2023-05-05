@@ -28,7 +28,6 @@ const gameModule = (() => {
     }
 
     resultDisplay.innerText = "";
-    replayButton.style.display = "none";
   }
   function _checkWin(playerXSelections, playerOSelections, winningSolutions) {
     let winningSolutionFound = false;
@@ -46,21 +45,18 @@ const gameModule = (() => {
         console.log("X won");
         _disableBoxes();
         resultDisplay.innerText = "X won";
-        _showReplayButton();
         break;
       } else if (foundInSecondPlayerSelections) {
         winningSolutionFound = true;
         console.log("O won");
         _disableBoxes();
         resultDisplay.innerText = "O won";
-        _showReplayButton();
         break;
       }
     }
 
     if (!winningSolutionFound && playerXSelections.length === 5) {
       resultDisplay.innerText = "It's a draw";
-      _showReplayButton();
     }
   }
 
@@ -70,12 +66,9 @@ const gameModule = (() => {
     }
   }
 
-  function _showReplayButton() {
-    replayButton.style.display = "block";
-    replayButton.addEventListener("click", () => {
-      _resetGame();
-    });
-  }
+  replayButton.addEventListener("click", () => {
+    _resetGame();
+  });
 
   function _boxClickHandler(i) {
     if (boxes[i].innerHTML !== "X" && boxes[i].innerHTML !== "O" && !gameWon) {
