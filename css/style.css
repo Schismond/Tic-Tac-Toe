@@ -568,6 +568,11 @@ video {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
+.box:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 640px) {
   .box {
     font-size: 3.75rem;
@@ -623,16 +628,16 @@ video {
   min-height: 100vh;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-\[80\%\] {
   width: 80%;
 }
 
 .w-screen {
   width: 100vw;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .grid-cols-3 {
@@ -693,16 +698,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.text-\[\#3D3D3D\] {
-  --tw-text-opacity: 1;
-  color: rgb(61 61 61 / var(--tw-text-opacity));
-}
-
-.text-\[\#98C2FB\] {
-  --tw-text-opacity: 1;
-  color: rgb(152 194 251 / var(--tw-text-opacity));
 }
 
 .text-blue-300 {
